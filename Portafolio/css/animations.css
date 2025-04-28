@@ -1,0 +1,135 @@
+/* Animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Animaciones para el slider de fondo */
+@keyframes zoomIn {
+  0% {
+    transform: scale(1);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomOut {
+  0% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+/* Clases de animación */
+.hidden-initially {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.show-animation {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.8s ease;
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+.slideInLeft {
+  animation-name: slideInLeft;
+}
+
+.slideInRight {
+  animation-name: slideInRight;
+}
+
+.pulse {
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+/* Si prefieres una transición más personalizada, puedes usar estas clases en lugar de las transiciones CSS */
+.bg-slide.entering {
+  animation: zoomIn 8s ease forwards;
+}
+
+.bg-slide.leaving {
+  animation: zoomOut 2s ease forwards;
+}
+
+/* Aplicaciones específicas */
+.showcase h1 {
+  animation: fadeIn 1s ease-out;
+}
+
+.showcase p {
+  animation: fadeIn 1s ease-out 0.5s both;
+}
+
+.showcase .btn {
+  animation: fadeIn 1s ease-out 1s both;
+}
+
+.section-title {
+  animation: fadeIn 1s ease-out;
+}

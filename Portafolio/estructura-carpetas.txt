@@ -1,0 +1,43 @@
+Estructura de carpetas recomendada:
+
+d:\Portafolio\
+│
+├── index.html           # Página principal
+│
+├── css\                 # Hojas de estilo
+│   ├── styles.css       # Estilos principales
+│   └── animations.css   # Animaciones
+│
+├── js\                  # JavaScript
+│   └── main.js          # Funciones principales
+│
+├── img\                 # Imágenes
+│   ├── seccion_inicio\  # Imágenes para la sección de inicio
+│   │   ├── 01.jpg       # Primera imagen del slider
+│   │   ├── 02.jpeg      # Segunda imagen del slider
+│   │   ├── 03.jpg       # Tercera imagen del slider
+│   │   └── 04.jpeg      # Cuarta imagen del slider
+│   │
+│   ├── profile.jpg      # Tu foto
+│   └── projects\        # Imágenes de proyectos
+│       ├── project1.jpg
+│       ├── project2.jpg
+│       └── project3.jpg
+│
+├── cv.pdf               # Tu currículum en PDF
+│
+└── README.md            # Instrucciones de personalización
+
+Carpetas adicionales que podrías necesitar:
+
+d:\Portafolio\
+│
+├── assets\              # Otros recursos
+│   ├── fonts\           # Fuentes personalizadas
+│   ├── icons\           # Iconos personalizados
+│   └── videos\          # Vídeos para el portafolio
+│
+└── pages\               # Páginas adicionales
+    ├── proyectos.html   # Página detallada de proyectos
+    ├── blog.html        # Blog personal
+    └── servicios.html   # Servicios que ofreces
